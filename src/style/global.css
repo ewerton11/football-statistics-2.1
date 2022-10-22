@@ -1,13 +1,13 @@
 @font-face {
   font-family: "kionaI";
-  src: url("../fontes/Kiona-Itallic.ttf") format("truetype");
+  src: url("../../public/fontes/Kiona-Itallic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "cinzelR";
-  src: url("../fontes/Cinzel-Regular.otf") format("OpenType");
+  src: url("../../public/fontes/Cinzel-Regular.otf") format("OpenType");
   font-weight: normal;
   font-style: normal;
 }
