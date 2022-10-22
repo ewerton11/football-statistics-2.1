@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "kionaI";
+  src: url("../fontes/Kiona-Itallic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cinzelR";
+  src: url("../fontes/Cinzel-Regular.otf") format("OpenType");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: black;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
