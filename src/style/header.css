@@ -1,0 +1,515 @@
+header {
+  z-index: 5;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 7vh;
+  }
+}
+
+.box-1 {
+  display: flex;
+}
+
+.menu-box-1 {
+  width: 7vw;
+  height: 10vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.137);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-box-1 button {
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1040px) {
+  .menu-box-1 {
+    width: 10vw;
+  }
+}
+@media (max-width: 600px) {
+  .menu-box-1 {
+    border-right: none;
+  }
+}
+@media (max-width: 500px) {
+  .menu-box-1 {
+    width: 20vw;
+    height: 7vh;
+  }
+}
+
+.menu-box-1 button:hover {
+  color: rgba(0, 0, 0, 0.774);
+}
+
+.choose-team {
+  width: 11vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.select-team {
+  width: 35px;
+  height: 35px;
+  border-right: 5px solid rgba(0, 0, 0, 0.137);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-radius: 40px;
+  position: relative;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.select-team img {
+  width: 32px;
+  padding-left: 2px;
+}
+
+.input-team {
+  width: 0;
+  display: none;
+  margin: 0px 5px;
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  transition: 0.5s;
+}
+
+.select-team:hover {
+  width: 10vw;
+}
+
+.select-team:hover .input-team {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 1040px) {
+  .select-team {
+    width: 10vw;
+  }
+  .select-team img {
+    display: none;
+  }
+  .input-team {
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .select-team {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .choose-team {
+    display: none;
+  }
+}
+
+.nav-menu {
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.nav-menu.active {
+  transform: translateX(-1%);
+  transition: 0.5s;
+}
+
+.nav-menu.active,
+.nav-menu {
+  z-index: 5;
+  width: 35%;
+  height: 90vh;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  position: fixed;
+  top: 10vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  .nav-menu.active,
+  .nav-menu {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .nav-menu.active,
+  .nav-menu {
+    width: 80%;
+    height: 93vh;
+    top: 7vh;
+  }
+}
+
+.top-navbar {
+  width: 100%;
+  height: 5vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-language {
+  width: 8vw;
+  height: 4vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container-language:hover {
+  border-bottom: 1px solid black;
+}
+
+.language {
+  width: 4vw;
+  height: 3vh;
+}
+
+.language img {
+  width: 50%;
+}
+
+.language-rigth {
+  font-family: "kionaI", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.x-menu {
+  width: 3vw;
+  height: 5vh;
+  margin-right: 1vw;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.x-menu:hover {
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+.nav-menu.active ul,
+.nav-menu ul {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.nav-menu.active li,
+.nav-menu li {
+  width: 100%;
+  height: 20vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu.active li:hover {
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+@media (max-width: 600px) {
+  .nav-menu.active li,
+  .nav-menu li {
+    height: 15vh;
+  }
+}
+@media (max-width: 500px) {
+  .nav-menu.active li,
+  .nav-menu li {
+    height: 10vh;
+    border: none;
+    justify-content: center;
+  }
+}
+
+.nav-menu.active a,
+.nav-menu a {
+  position: relative;
+  left: 30px;
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.box-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "kionaI", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.box-3 {
+  display: flex;
+}
+
+.settings-nav {
+  width: 11vw;
+  height: 10vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.lupa-mobile {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .settings-nav {
+    height: 7vh;
+  }
+  .lupa-mobile {
+    width: 50%;
+    margin-right: 5vw;
+    display: block;
+  }
+}
+
+.search-header {
+  width: 35px;
+  height: 35px;
+  border-left: 5px solid rgba(0, 0, 0, 0.137);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-radius: 40px;
+  position: relative;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-header img {
+  width: 25px;
+}
+
+.input-search {
+  width: 0;
+  display: none;
+  margin: 0px 5px;
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  transition: 0.5s;
+}
+
+.search-header:hover {
+  width: 10vw;
+}
+
+.search-header .input-search {
+  width: 100%;
+  display: block;
+}
+
+.league {
+  width: 7vw;
+  height: 10vh;
+  border-left: 1px solid rgba(0, 0, 0, 0.137);
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1040px) {
+  .search-header {
+    width: 10vw;
+  }
+  .search-header img {
+    display: none;
+  }
+  .input-search {
+    width: 100%;
+    display: block;
+  }
+  .league {
+    width: 10vw;
+  }
+}
+@media (max-width: 600px) {
+  .search-header {
+    border: none;
+  }
+  .league {
+    border-left: none;
+  }
+}
+@media (max-width: 500px) {
+  .search-header {
+    display: none;
+  }
+}
+
+.league button {
+  position: relative;
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.league button:hover {
+  color: rgba(0, 0, 0, 0.774);
+}
+
+.league:hover .championships {
+  height: 90vh;
+  visibility: visible;
+}
+
+.championships {
+  z-index: 4;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  position: fixed;
+  top: 10vh;
+  right: 0px;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.championships ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.championships li {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  position: relative;
+  text-align: center;
+}
+
+.championships li:hover {
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.championships a {
+  position: relative;
+  top: 44%;
+  color: black;
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.color-system {
+  width: 7vw;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.137);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.color-mode {
+  position: relative;
+  display: flex;
+  left: 15px;
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.color-mode:hover {
+  color: rgba(0, 0, 0, 0.774);
+}
+
+.dark-mode {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 20px;
+  margin-left: 2px;
+  display: block;
+}
+
+.clear-mode {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 20px;
+  margin-left: 2px;
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .color-system {
+    width: 10vw;
+  }
+  .color-mode {
+    left: 10px;
+  }
+  .dark-mode {
+    left: 15px;
+  }
+  .clear-mode {
+    left: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .dark-mode {
+    display: none;
+  }
+  .clear-mode {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .color-system {
+    border-left: none;
+  }
+}
+@media (max-width: 500px) {
+  .league {
+    display: none;
+  }
+  .color-system {
+    display: none;
+  }
+}
