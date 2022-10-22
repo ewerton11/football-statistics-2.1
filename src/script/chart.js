@@ -1,4 +1,4 @@
-import Chart from "chart.js"
+import Chart from "chart.js/auto"
 
 const labels = [
   "1° rodada",
@@ -58,5 +58,3 @@ const config = {
 }
 
 const myChart = new Chart(document.getElementById("chart-t1"), config)
-
-export default graphc
