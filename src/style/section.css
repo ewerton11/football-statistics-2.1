@@ -64,11 +64,10 @@
 .container-c1,
 .container-c2,
 .container-c3 {
-  width: 10vw;
-  height: 30vh;
+  width: 150px;
+  height: 150px;
   margin: 0px 2vw;
   display: flex;
-  justify-content: left;
 }
 
 /*------------------------------------------------*/
