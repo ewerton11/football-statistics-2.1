@@ -17,8 +17,10 @@ const c1 = new Chart(document.getElementById("firstCircle"), {
     borderWidth: 0,
     cutout: "90%",
     animation: false,
-    tooltips: {
-      //tirar
+    plugins: {
+      tooltip: {
+        enabled: false,
+      },
     },
   },
 })
@@ -40,6 +42,11 @@ const c2 = new Chart(document.getElementById("secondCircle"), {
     borderWidth: 0,
     cutout: "90%",
     animation: false,
+    plugins: {
+      tooltip: {
+        enabled: false,
+      },
+    },
   },
 })
 
@@ -60,6 +67,11 @@ const c3 = new Chart(document.getElementById("thirdCircle"), {
     borderWidth: 0,
     cutout: "90%",
     animation: false,
+    plugins: {
+      tooltip: {
+        enabled: false,
+      },
+    },
   },
 })
 
