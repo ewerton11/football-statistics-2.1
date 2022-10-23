@@ -6,8 +6,8 @@ const c1 = new Chart(document.getElementById("firstCircle"), {
     labels: "",
     datasets: [
       {
-        data: [100],
-        backgroundColor: ["rgb(8, 18, 58)"],
+        data: [90, 10],
+        backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],
   },
@@ -16,6 +16,10 @@ const c1 = new Chart(document.getElementById("firstCircle"), {
     hover: { mode: null },
     borderWidth: 0,
     cutout: "90%",
+    animation: false,
+    tooltips: {
+      //tirar
+    },
   },
 })
 
@@ -25,8 +29,8 @@ const c2 = new Chart(document.getElementById("secondCircle"), {
     labels: "",
     datasets: [
       {
-        data: [100],
-        backgroundColor: ["rgb(8, 18, 58)"],
+        data: [70, 30],
+        backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],
   },
@@ -35,6 +39,7 @@ const c2 = new Chart(document.getElementById("secondCircle"), {
     hover: { mode: null },
     borderWidth: 0,
     cutout: "90%",
+    animation: false,
   },
 })
 
@@ -44,8 +49,8 @@ const c3 = new Chart(document.getElementById("thirdCircle"), {
     labels: "",
     datasets: [
       {
-        data: [100],
-        backgroundColor: ["rgb(8, 18, 58)"],
+        data: [60, 40],
+        backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],
   },
@@ -54,6 +59,7 @@ const c3 = new Chart(document.getElementById("thirdCircle"), {
     hover: { mode: null },
     borderWidth: 0,
     cutout: "90%",
+    animation: false,
   },
 })
 
