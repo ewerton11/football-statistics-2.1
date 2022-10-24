@@ -14,7 +14,7 @@ async function start() {
 
   const round = await page.evaluate(() => {
     let dados = document.querySelector(".lista-jogos__navegacao--rodada")
-    let roundNumber = /\d\d/.exec(dados.innerText)
+    let roundNumber = { roundBrasileirao: `${/\d\d/.exec(dados.innerText)}` }
 
     return roundNumber
   })
