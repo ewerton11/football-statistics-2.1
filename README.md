@@ -6,7 +6,9 @@
 
 ## Technologies
 
->* Vite
->* Node js
->* Chart js
->* Puppeteer
+<table>
+Vite
+Node js
+Chart js
+Puppeteer
+</table>
