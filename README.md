@@ -8,7 +8,7 @@
 
 <table>
 Vite
-Node js
-Chart js
+Node.js
+Chart.js
 Puppeteer
 </table>
