@@ -1,12 +1,25 @@
 import Chart from "chart.js/auto"
 
+async function fetchData() {
+  const response = await fetch("./src/script/chartInformation.json")
+  const data = await response.json()
+
+  return data
+}
+
+fetchData().then((data) => {
+  const month = data.roundBra
+  c1.data.datasets[0].data = month
+  c1.update()
+})
+
 const c1 = new Chart(document.getElementById("firstCircle"), {
   type: "doughnut",
   data: {
     labels: "",
     datasets: [
       {
-        data: [90, 10],
+        data: [],
         backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],
