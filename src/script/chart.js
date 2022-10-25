@@ -4,19 +4,14 @@ async function fetchData() {
   const response = await fetch("./src/script/chartInformation.json")
   const data = await response.json()
 
-  console.log(data)
   return data
 }
 
 fetchData().then((data) => {
-  const month = data.roundBrasileirao
-  console.log(month)
+  const month = data.roundBra
   c1.data.datasets[0].data = month
   c1.update()
-  console.log(c1.data.datasets[0].data)
 })
-
-// console.log(dataa)
 
 const c1 = new Chart(document.getElementById("firstCircle"), {
   type: "doughnut",

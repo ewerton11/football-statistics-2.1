@@ -13,8 +13,13 @@ async function start() {
   await page.goto("https://ge.globo.com/futebol/brasileirao-serie-a/")
 
   const round = await page.evaluate(() => {
-    let dados = document.querySelector(".lista-jogos__navegacao--rodada")
-    let roundNumber = { roundBrasileirao: `${/\d\d/.exec(dados.innerText)}` }
+    let dataRound = document.querySelector(".lista-jogos__navegacao--rodada")
+    let roundNumber = {
+      roundBra: [
+        `${/\d\d/.exec(dataRound.innerText)}`,
+        38 - `${/\d\d/.exec(dataRound.innerText)}`,
+      ],
+    }
 
     return roundNumber
   })
@@ -23,9 +28,9 @@ async function start() {
     "chartInformation.json",
     JSON.stringify(round, null, 2),
     (err) => {
-      if (err) throw new Error("Erro")
+      if (err) throw new Error("Error")
 
-      console.log("Tudo certo!")
+      console.log("Good!")
     }
   )
 
