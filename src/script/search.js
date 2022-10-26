@@ -14,25 +14,19 @@ async function serieARound() {
 
   const round = await page.evaluate(() => {
     const dataRound = document.querySelector(".lista-jogos__navegacao--rodada")
-    const roundNumber = {
-      roundBra: [
-        `${/\d\d/.exec(dataRound.innerText)}`,
-        38 - `${/\d\d/.exec(dataRound.innerText)}`,
-      ],
-    }
+    const roundNumber = [
+      `${/\d\d/.exec(dataRound.innerText)}`,
+      38 - `${/\d\d/.exec(dataRound.innerText)}`,
+    ]
 
     return roundNumber
   })
 
-  fs.writeFile(
-    "chartInformation.json",
-    JSON.stringify(round, null, 2),
-    (err) => {
-      if (err) throw new Error("Error")
+  const data = fs.readFileSync("chartInformation.json")
+  const converting = JSON.parse(data)
+  converting.roundBra = round
 
-      console.log("Good!")
-    }
-  )
+  fs.writeFileSync("chartInformation.json", JSON.stringify(converting, null, 2))
 
   await browser.close()
 }
@@ -60,22 +54,17 @@ async function liberatorsRound() {
       console.log("nao foi")
     }
 
-    const phase = {
-      phaseLib: [dataObtained, 5 - dataObtained],
-    }
+    const phase = [dataObtained, 5 - dataObtained]
 
     return phase
   })
 
-  fs.writeFile(
-    "chartInformation.json",
-    JSON.stringify(phaseRound, null, 2),
-    (err) => {
-      if (err) throw new Error("Error")
+  const data = fs.readFileSync("chartInformation.json")
+  const converting = JSON.parse(data)
+  converting.phaseLib = phaseRound
 
-      console.log("Good!")
-    }
-  )
+  fs.writeFileSync("chartInformation.json", JSON.stringify(converting, null, 2))
+
   await browser.close()
 }
 
