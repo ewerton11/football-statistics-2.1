@@ -1,5 +1,6 @@
 import puppeteer from "puppeteer"
 import fs from "fs"
+import nodeSchedule from "node-schedule"
 
 async function serieARound() {
   const browser = await puppeteer.launch({
@@ -30,7 +31,6 @@ async function serieARound() {
 
   await browser.close()
 }
-serieARound()
 
 async function liberatorsRound() {
   const browser = await puppeteer.launch({
@@ -68,8 +68,6 @@ async function liberatorsRound() {
   await browser.close()
 }
 
-liberatorsRound()
-
 async function brazilCup() {
   const browser = await puppeteer.launch({
     args: ["--no-sandbox"],
@@ -106,4 +104,10 @@ async function brazilCup() {
   await browser.close()
 }
 
-brazilCup()
+const scheduling = nodeSchedule.scheduleJob({ hour: 20 }, () => {
+  serieARound()
+  liberatorsRound()
+  brazilCup()
+})
+
+// console.log(scheduling.nextInvocation())
