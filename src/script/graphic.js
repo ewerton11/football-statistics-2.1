@@ -80,7 +80,7 @@ const c3 = new Chart(document.getElementById("thirdCircle"), {
     labels: "",
     datasets: [
       {
-        data: [60, 40],
+        data: [],
         backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],
