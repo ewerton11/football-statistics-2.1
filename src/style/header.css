@@ -85,7 +85,7 @@ header {
   padding-left: 2px;
 }
 
-.input-team {
+#input-select-team {
   width: 0;
   display: none;
   margin: 0px 5px;
@@ -100,9 +100,34 @@ header {
   width: 10vw;
 }
 
-.select-team:hover .input-team {
+.select-team:hover #input-select-team {
   width: 100%;
   display: block;
+}
+
+.select-team-list {
+  width: 13vw;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  position: fixed;
+  top: 7vh;
+  margin-top: 3vh;
+  display: none;
+}
+
+.select-team-list ul {
+  width: 100%;
+  height: 100%;
+}
+
+.select-team-list li {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "kionaI";
+  font-size: 1rem;
 }
 
 @media (max-width: 1040px) {
@@ -112,7 +137,7 @@ header {
   .select-team img {
     display: none;
   }
-  .input-team {
+  #input-select-team {
     width: 100%;
     display: block;
   }

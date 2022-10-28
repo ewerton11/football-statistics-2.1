@@ -84,3 +84,23 @@ class Next {
 }
 
 const Tables = new Next()
+
+const updatedDay = new Date().getDay()
+const updatedMonth = new Date().getMonth()
+const updateTime = new Date().getHours()
+const updateMinutes = new Date().getMinutes()
+const updateDate = `Ultima atualizaçao ${updatedDay}/${updatedMonth} ${updateTime}:${updateMinutes}`
+
+document.getElementById("update-schedule").innerText = updateDate
+
+const inputTeam = document.getElementById("input-select-team")
+
+inputTeam.addEventListener("input", () => {
+  // e.preventDefault()
+
+  const team = document.querySelector(".select-team-list")
+
+  inputTeam.value.length === 0
+    ? (team.style.display = "none")
+    : (team.style.display = "flex")
+})
