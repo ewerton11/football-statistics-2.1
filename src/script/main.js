@@ -104,3 +104,19 @@ inputTeam.addEventListener("input", () => {
     ? (team.style.display = "none")
     : (team.style.display = "flex")
 })
+
+function fetchData() {
+  fetch("./src/script/chartInformation.json")
+    .then((Response) => Response.json())
+    .then((data) => {
+      const teamUl = document.querySelector(".select-team-list ul")
+
+      data.teams.map((item) => {
+        const li = document.createElement("li")
+        li.innerHTML = item.nome
+        teamUl.appendChild(li)
+      })
+    })
+}
+
+fetchData()
