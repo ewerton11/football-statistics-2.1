@@ -8,9 +8,20 @@ async function fetchData() {
 }
 
 fetchData().then((data) => {
-  const month = data.roundBra
-  c1.data.datasets[0].data = month
+  const roundBra = data.roundBra
+  c1.data.datasets[0].data = roundBra
+
   c1.update()
+
+  const phaseLib = data.phaseLib
+  c2.data.datasets[0].data = phaseLib
+
+  c2.update()
+
+  const brazilCup = data.brazilCup
+  c3.data.datasets[0].data = brazilCup
+
+  c3.update()
 })
 
 const c1 = new Chart(document.getElementById("firstCircle"), {
@@ -44,7 +55,7 @@ const c2 = new Chart(document.getElementById("secondCircle"), {
     labels: "",
     datasets: [
       {
-        data: [70, 30],
+        data: [],
         backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],
@@ -69,7 +80,7 @@ const c3 = new Chart(document.getElementById("thirdCircle"), {
     labels: "",
     datasets: [
       {
-        data: [60, 40],
+        data: [],
         backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],
