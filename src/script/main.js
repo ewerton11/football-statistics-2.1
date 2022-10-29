@@ -96,25 +96,40 @@ document.getElementById("update-schedule").innerText = updateDate
 const inputTeam = document.getElementById("input-select-team")
 
 inputTeam.addEventListener("input", () => {
-  // e.preventDefault()
-
   const team = document.querySelector(".select-team-list")
 
   inputTeam.value.length === 0
     ? (team.style.display = "none")
     : (team.style.display = "flex")
+
+  const teamLi = document.querySelector(".select-team-list ul li")
+
+  // teamLi.innerHTML = ""
+
+  teamSearch
+    .filter((teamSearch) => teamSearch.includes(inputTeam.value))
+    .forEach((teamSearch) => listHtml(teamSearch))
 })
 
+const teamUl = document.querySelector(".select-team-list ul")
+
+let teamSearch = []
+
 function fetchData() {
+  function listHtml(teamSearch) {
+    const li = document.createElement("li")
+    li.innerHTML = teamSearch
+    teamUl.appendChild(li)
+
+    console.log("ola")
+  }
+
   fetch("./src/script/chartInformation.json")
     .then((Response) => Response.json())
     .then((data) => {
-      const teamUl = document.querySelector(".select-team-list ul")
-
-      data.teams.map((item) => {
-        const li = document.createElement("li")
-        li.innerHTML = item.nome
-        teamUl.appendChild(li)
+      data.teams.forEach((item) => {
+        listHtml(item.nameTeam)
+        teamSearch.push(item.nameTeam)
       })
     })
 }

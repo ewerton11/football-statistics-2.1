@@ -1,13 +1,13 @@
 {
   "teams": [
     {
-      "nome": "fluminense"
+      "nameTeam": "fluminense"
     },
     {
-      "nome": "atletico"
+      "nameTeam": "atletico"
     },
     {
-      "nome": "santos"
+      "nameTeam": "santos"
     }
   ],
   "brazilCup": [9, 1],
