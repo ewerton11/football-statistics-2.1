@@ -115,7 +115,7 @@ let teamSearch = []
 
 function listHtml(teamSearch) {
   const li = document.createElement("li")
-  li.innerHTML = teamSearch
+  li.id = li.innerHTML = teamSearch
   teamUl.appendChild(li)
 }
 
