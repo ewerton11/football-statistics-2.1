@@ -130,6 +130,10 @@ header {
   font-size: 1rem;
 }
 
+.select-team-list li:hover {
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
 @media (max-width: 1040px) {
   .select-team {
     width: 10vw;
