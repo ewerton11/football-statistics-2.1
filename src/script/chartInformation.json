@@ -1,14 +1,16 @@
 {
-  "brazilCup": [
-    9,
-    1
+  "teams": [
+    {
+      "nameTeam": "fluminense"
+    },
+    {
+      "nameTeam": "atletico"
+    },
+    {
+      "nameTeam": "santos"
+    }
   ],
-  "phaseLib": [
-    9,
-    1
-  ],
-  "roundBra": [
-    "34",
-    4
-  ]
+  "brazilCup": [9, 1],
+  "phaseLib": [9, 1],
+  "roundBra": ["34", 4]
 }
