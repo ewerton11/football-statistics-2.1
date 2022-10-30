@@ -102,11 +102,17 @@ inputTeam.addEventListener("input", () => {
     ? (team.style.display = "none")
     : (team.style.display = "flex")
 
+  // team.addEventListener("click", () => {
+  //   team.style.display = "none"
+  // })
+
   teamUl.innerHTML = ""
 
   teamSearch
     .filter((teamSearch) => teamSearch.includes(inputTeam.value))
     .forEach((teamSearch) => listHtml(teamSearch))
+
+  document.getElementById("fluminense") ? filterTeam() : console.log("nao foi")
 })
 
 const teamUl = document.querySelector(".select-team-list ul")
@@ -115,7 +121,7 @@ let teamSearch = []
 
 function listHtml(teamSearch) {
   const li = document.createElement("li")
-  li.innerHTML = teamSearch
+  li.id = li.innerHTML = teamSearch
   teamUl.appendChild(li)
 }
 
@@ -131,3 +137,19 @@ function fetchData() {
 }
 
 fetchData()
+
+const imgTeam = document.querySelector(".select-team img")
+const selectTeam = document.querySelector(".select-team")
+
+function filterTeam() {
+  const imgFluminense = document.createElement("img")
+  imgFluminense.src = "/public/imagens/Fluminense.png"
+
+  let i = 0
+  document.getElementById("fluminense").addEventListener("click", () => {
+    if (i < 1) {
+      i++
+      selectTeam.replaceChild(imgFluminense, imgTeam)
+    }
+  })
+}

@@ -1,13 +1,16 @@
 {
   "teams": [
     {
-      "nameTeam": "fluminense"
+      "nameTeam": "fluminense",
+      "Image": "/public/imagens/Fluminense.png"
     },
     {
-      "nameTeam": "atletico"
+      "nameTeam": "atletico-mg",
+      "Image": "/public/imagens/Atletico-MG.png"
     },
     {
-      "nameTeam": "santos"
+      "nameTeam": "santos",
+      "Image": "/public/imagens/Santos.png"
     }
   ],
   "brazilCup": [9, 1],
