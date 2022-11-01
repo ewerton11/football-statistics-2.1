@@ -85,13 +85,13 @@ class Next {
 
 const Tables = new Next()
 
-const updatedDay = new Date().getDay()
-const updatedMonth = new Date().getMonth()
-const updateTime = new Date().getHours()
-const updateMinutes = new Date().getMinutes()
-const updateDate = `Ultima atualizaçao ${updatedDay}/${updatedMonth} ${updateTime}:${updateMinutes}`
+// const updatedDay = new Date().getDay()
+// const updatedMonth = new Date().getMonth()
+// const updateTime = new Date().getHours()
+// const updateMinutes = new Date().getMinutes()
+// const updateDate = `Ultima atualizaçao ${updatedDay}/${updatedMonth} ${updateTime}:${updateMinutes}`
 
-document.getElementById("update-schedule").innerText = updateDate
+// document.getElementById("update-schedule").innerText = updateDate
 
 const inputTeam = document.getElementById("input-select-team")
 
@@ -102,9 +102,9 @@ inputTeam.addEventListener("input", () => {
     ? (team.style.display = "none")
     : (team.style.display = "flex")
 
-  // team.addEventListener("click", () => {
-  //   team.style.display = "none"
-  // })
+  team.addEventListener("click", () => {
+    team.style.display = "none"
+  })
 
   teamUl.innerHTML = ""
 
@@ -112,15 +112,16 @@ inputTeam.addEventListener("input", () => {
     .filter((teamSearch) => teamSearch.includes(inputTeam.value))
     .forEach((teamSearch) => listHtml(teamSearch))
 
-  document.getElementById("fluminense") ? filterTeam() : console.log("nao foi")
+  // document.querySelector(".select-team-list ul li") ? filterTeam() : ""
 })
 
 const teamUl = document.querySelector(".select-team-list ul")
 
-let teamSearch = []
+const teamSearch = []
 
 function listHtml(teamSearch) {
   const li = document.createElement("li")
+
   li.id = li.innerHTML = teamSearch
   teamUl.appendChild(li)
 }
@@ -137,19 +138,3 @@ function fetchData() {
 }
 
 fetchData()
-
-const imgTeam = document.querySelector(".select-team img")
-const selectTeam = document.querySelector(".select-team")
-
-function filterTeam() {
-  const imgFluminense = document.createElement("img")
-  imgFluminense.src = "/public/imagens/Fluminense.png"
-
-  let i = 0
-  document.getElementById("fluminense").addEventListener("click", () => {
-    if (i < 1) {
-      i++
-      selectTeam.replaceChild(imgFluminense, imgTeam)
-    }
-  })
-}
