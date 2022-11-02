@@ -102,8 +102,140 @@ inputTeam.addEventListener("input", () => {
     ? (team.style.display = "none")
     : (team.style.display = "flex")
 
-  team.addEventListener("click", () => {
+  team.addEventListener("click", (e) => {
     team.style.display = "none"
+
+    const selectTeam = e.target.innerHTML
+
+    function filterTeam(objectTeam) {
+      const img = document.querySelector(".select-team > img")
+
+      objectTeam.forEach((item) => {
+        if (selectTeam === "fluminense") {
+          const imgFluminense = document.createElement("img")
+
+          img.src = "/public/imagens/bola-time.png"
+            ? (imgFluminense.innerHTML = item.items[0].image)
+            : (imgFluminense.innerHTML = item.items[0].image)
+        }
+        // else if (selectTeam === "atletico-mg") {
+        //   const imgAtleticoMG = document.createElement("img")
+
+        //   img.src = "/public/imagens/bola-time.png"
+        //     ? (imgAtleticoMG.innerHTML = item.items[1].image)
+        //     : (imgAtleticoMG.innerHTML = item.items[1].image)
+        // } else if (selectTeam === "santos") {
+        //   const imgSantos = document.createElement("img")
+
+        //   img.src = "/public/imagens/bola-time.png"
+        //     ? (imgSantos.innerHTML = item.items[2].image)
+        //     : (imgSantos.innerHTML = item.items[2].image)
+        // } else if (selectTeam === "santos") {
+        //   const imgSantos = document.createElement("img")
+
+        //   img.src = "/public/imagens/bola-time.png"
+        //     ? (imgSantos.innerHTML = item.items[2].image)
+        //     : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   } else if (selectTeam === "santos") {
+        //     const imgSantos = document.createElement("img")
+
+        //     img.src = "/public/imagens/bola-time.png"
+        //       ? (imgSantos.innerHTML = item.items[2].image)
+        //       : (imgSantos.innerHTML = item.items[2].image)
+        //   }
+      })
+    }
+    filterTeam(objectTeam)
   })
 
   teamUl.innerHTML = ""
@@ -118,6 +250,7 @@ inputTeam.addEventListener("input", () => {
 const teamUl = document.querySelector(".select-team-list ul")
 
 const teamSearch = []
+const objectTeam = []
 
 function listHtml(teamSearch) {
   const li = document.createElement("li")
@@ -131,6 +264,10 @@ function fetchData() {
     .then((Response) => Response.json())
     .then((data) => {
       data.teams.forEach((item) => {
+        objectTeam.push(item)
+      })
+
+      data.teams[0].items.forEach((item) => {
         listHtml(item.nameTeam)
         teamSearch.push(item.nameTeam)
       })
