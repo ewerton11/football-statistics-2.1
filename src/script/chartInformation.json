@@ -1,16 +1,88 @@
 {
   "teams": [
     {
-      "nameTeam": "fluminense",
-      "Image": "/public/imagens/Fluminense.png"
-    },
-    {
-      "nameTeam": "atletico-mg",
-      "Image": "/public/imagens/Atletico-MG.png"
-    },
-    {
-      "nameTeam": "santos",
-      "Image": "/public/imagens/Santos.png"
+      "items": [
+        {
+          "nameTeam": "america-mg",
+          "image": "/public/imagens/America-MG.png"
+        },
+        {
+          "nameTeam": "athetico-pr",
+          "image": "/public/imagens/Athletico-PR.png"
+        },
+        {
+          "nameTeam": "atletico-go",
+          "image": "/public/imagens/Atletico-GO.png"
+        },
+        {
+          "nameTeam": "atletico-mg",
+          "image": "/public/imagens/Atletico-MG.png"
+        },
+        {
+          "nameTeam": "avai",
+          "image": "/public/imagens/Avai.png"
+        },
+        {
+          "nameTeam": "botafogo",
+          "image": "/public/imagens/Botafogo.png"
+        },
+        {
+          "nameTeam": "bragantino",
+          "image": "/public/imagens/Bragantino.png"
+        },
+        {
+          "nameTeam": "ceara",
+          "image": "/public/imagens/Ceara.png"
+        },
+        {
+          "nameTeam": "corinthians",
+          "image": "/public/imagens/Corinthians.png"
+        },
+        {
+          "nameTeam": "coritiba",
+          "image": "/public/imagens/Coritiba.png"
+        },
+        {
+          "nameTeam": "cuiaba",
+          "image": "/public/imagens/Cuiaba.png"
+        },
+        {
+          "nameTeam": "flamengo",
+          "image": "/public/imagens/Flamengo.png"
+        },
+        {
+          "nameTeam": "fluminense",
+          "image": "/public/imagens/Fluminense.png"
+        },
+        {
+          "nameTeam": "fortaleza",
+          "image": "/public/imagens/Fortaleza.png"
+        },
+        {
+          "nameTeam": "goias",
+          "image": "/public/imagens/Goias.png"
+        },
+        {
+          "nameTeam": "internacional",
+          "image": "/public/imagens/Internacional.png"
+        },
+        {
+          "nameTeam": "juventude",
+          "image": "/public/imagens/Juventude.png"
+        },
+        {
+          "nameTeam": "palmeiras",
+          "image": "/public/imagens/Palmeiras.png"
+        },
+        {
+          "nameTeam": "santos",
+          "image": "/public/imagens/Santos.png"
+        },
+        {
+          "nameTeam": "sao paulo",
+          "image": "/public/imagens/Sao Paulo.png"
+        }
+      ]
     }
   ],
   "brazilCup": [9, 1],

@@ -102,8 +102,29 @@ inputTeam.addEventListener("input", () => {
     ? (team.style.display = "none")
     : (team.style.display = "flex")
 
-  team.addEventListener("click", () => {
+  team.addEventListener("click", (e) => {
     team.style.display = "none"
+
+    const selectTeam = e.target.innerHTML
+
+    function filterTeam(objectTeam) {
+      const img = document.querySelector(".select-team > img")
+
+      objectTeam.forEach((item) => {
+        if (selectTeam === selectTeam) {
+          const index = objectTeam[0].items.findIndex(
+            (item) => item.nameTeam === selectTeam
+          )
+
+          const imgTeam = document.createElement("img")
+
+          img.src = "/public/imagens/bola-time.png"
+            ? (imgTeam.innerHTML = item.items[`${index}`].image)
+            : (imgTeam.innerHTML = item.items[`${index}`].image)
+        }
+      })
+    }
+    filterTeam(objectTeam)
   })
 
   teamUl.innerHTML = ""
@@ -111,13 +132,12 @@ inputTeam.addEventListener("input", () => {
   teamSearch
     .filter((teamSearch) => teamSearch.includes(inputTeam.value))
     .forEach((teamSearch) => listHtml(teamSearch))
-
-  // document.querySelector(".select-team-list ul li") ? filterTeam() : ""
 })
 
 const teamUl = document.querySelector(".select-team-list ul")
 
 const teamSearch = []
+const objectTeam = []
 
 function listHtml(teamSearch) {
   const li = document.createElement("li")
@@ -131,6 +151,10 @@ function fetchData() {
     .then((Response) => Response.json())
     .then((data) => {
       data.teams.forEach((item) => {
+        objectTeam.push(item)
+      })
+
+      data.teams[0].items.forEach((item) => {
         listHtml(item.nameTeam)
         teamSearch.push(item.nameTeam)
       })
