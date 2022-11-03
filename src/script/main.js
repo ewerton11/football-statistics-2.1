@@ -96,14 +96,17 @@ const Tables = new Next()
 const inputTeam = document.getElementById("input-select-team")
 
 inputTeam.addEventListener("input", () => {
+  const widthTeam = document.querySelector(".select-team")
   const team = document.querySelector(".select-team-list")
 
   inputTeam.value.length === 0
     ? (team.style.display = "none")
     : (team.style.display = "flex")
+  // && (widthTeam.style.width = "10vw")
 
   team.addEventListener("click", (e) => {
     team.style.display = "none"
+    // widthTeam.style.width = ""
 
     const selectTeam = e.target.innerHTML
 

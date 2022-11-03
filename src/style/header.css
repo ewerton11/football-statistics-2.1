@@ -209,7 +209,6 @@ header {
 .container-language {
   width: 8vw;
   height: 4vh;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -217,8 +216,16 @@ header {
   transition: 0.5s;
 }
 
-.container-language:hover {
+/* .container-language:hover {
   border-bottom: 1px solid black;
+} */
+
+.container-language::after {
+  width: 1px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.205);
+  margin-left: 5px;
+  content: "";
 }
 
 .language {
@@ -239,7 +246,7 @@ header {
 .x-menu {
   width: 3vw;
   height: 5vh;
-  margin-right: 1vw;
+  padding: 0px 1vw;
   font-size: 16px;
   font-weight: bold;
 }
@@ -287,7 +294,7 @@ header {
 .nav-menu.active a,
 .nav-menu a {
   position: relative;
-  left: 30px;
+  left: 10px;
   font-family: arial, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
