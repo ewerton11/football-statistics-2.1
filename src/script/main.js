@@ -119,8 +119,8 @@ inputTeam.addEventListener("input", () => {
           const imgTeam = document.createElement("img")
 
           img.src = "/public/imagens/bola-time.png"
-            ? (imgTeam.innerHTML = item.items[`${index}`].image)
-            : (imgTeam.innerHTML = item.items[`${index}`].image)
+            ? (imgTeam.innerHTML = item.items[index].image)
+            : (imgTeam.innerHTML = item.items[index].image)
         }
       })
     }
