@@ -10,6 +10,12 @@ menu.addEventListener("click", () => {
   navmenu.classList.toggle("active")
 })
 
+document.onclick = function (e) {
+  if (e.target.id !== "menu-box-1") {
+    navmenu.classList.remove("active")
+  }
+}
+
 xnavbar.addEventListener("click", () => {
   navmenu.classList.toggle("active")
 })

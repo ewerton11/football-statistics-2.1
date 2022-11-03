@@ -29,13 +29,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.menu-box-1 button {
   font-family: arial, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.menu-box-1:hover {
+  color: rgba(0, 0, 0, 0.774);
 }
 
 @media (max-width: 1040px) {
@@ -53,10 +54,6 @@ header {
     width: 20vw;
     height: 7vh;
   }
-}
-
-.menu-box-1 button:hover {
-  color: rgba(0, 0, 0, 0.774);
 }
 
 .choose-team {
