@@ -110,8 +110,8 @@ inputTeam.addEventListener("input", () => {
     function filterTeam(objectTeam) {
       const img = document.querySelector(".select-team > img")
 
-      objectTeam.forEach((item) => {
-        if (selectTeam === selectTeam) {
+      if (selectTeam === selectTeam) {
+        objectTeam.forEach((item) => {
           const index = objectTeam[0].items.findIndex(
             (item) => item.nameTeam === selectTeam
           )
@@ -121,8 +121,8 @@ inputTeam.addEventListener("input", () => {
           img.src = "/public/imagens/bola-time.png"
             ? (imgTeam.innerHTML = item.items[index].image)
             : (imgTeam.innerHTML = item.items[index].image)
-        }
-      })
+        })
+      }
     }
     filterTeam(objectTeam)
   })
