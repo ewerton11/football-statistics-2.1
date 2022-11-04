@@ -57,14 +57,14 @@ colorMode.addEventListener("click", function () {
     i++
 
     changeColors(darkMode)
-    firstelement.textContent = "Clear"
+    firstelement.textContent = "Claro"
     firstelementImg.src = "/public/imagens/sol.png"
     firstelementImg.alt = "modo claro"
   } else {
     i = 0
 
     changeColors(initialColors)
-    firstelement.textContent = "Dark"
+    firstelement.textContent = "Escuro"
     firstelementImg.src = "/public/imagens/lua.png"
     firstelementImg.alt = "modo escuro"
   }
