@@ -1,3 +1,4 @@
+const html = document.querySelector("html")
 let menu = document.querySelector(".menu-box-1")
 let xnavbar = document.querySelector(".x-menu")
 let navmenu = document.querySelector("#nav-menu")
@@ -10,6 +11,12 @@ menu.addEventListener("click", () => {
   navmenu.classList.toggle("active")
 })
 
+document.onclick = function (e) {
+  if (e.target.id !== "menu-box-1") {
+    navmenu.classList.remove("active")
+  }
+}
+
 xnavbar.addEventListener("click", () => {
   navmenu.classList.toggle("active")
 })
@@ -18,18 +25,48 @@ logo.addEventListener("click", () => {
   document.location.reload(true)
 })
 
+const getStyle = (element, style) =>
+  window.getComputedStyle(element).getPropertyValue(style)
+
+const initialColors = {
+  bg: getStyle(html, "--bg"),
+  colorText: getStyle(html, "--color-text"),
+  border: getStyle(html, "--border"),
+}
+
+const darkMode = {
+  bg: "#1a1818",
+  colorText: "#ffffff",
+  border: "#ffffff23",
+}
+
+const tranformKey = (key) => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
+
+const changeColors = (colors) => {
+  Object.keys(colors).map((key) =>
+    html.style.setProperty(tranformKey(key), colors[key])
+  )
+}
+
 var i = 0
 colorMode.addEventListener("click", function () {
-  let firstelement = document.querySelector(".color-mode")
+  const firstelement = document.querySelector(".color-mode")
+  const firstelementImg = document.querySelector(".color-system > img")
 
   if (i == 0) {
     i++
 
+    changeColors(darkMode)
     firstelement.textContent = "Clear"
+    firstelementImg.src = "/public/imagens/claro.png"
+    firstelementImg.alt = "modo claro"
   } else {
     i = 0
 
+    changeColors(initialColors)
     firstelement.textContent = "Dark"
+    firstelementImg.src = "/public/imagens/noturno.png"
+    firstelementImg.alt = "modo escuro"
   }
 })
 
@@ -96,14 +133,17 @@ const Tables = new Next()
 const inputTeam = document.getElementById("input-select-team")
 
 inputTeam.addEventListener("input", () => {
+  const widthTeam = document.querySelector(".select-team")
   const team = document.querySelector(".select-team-list")
 
   inputTeam.value.length === 0
     ? (team.style.display = "none")
     : (team.style.display = "flex")
+  // && (widthTeam.style.width = "10vw")
 
   team.addEventListener("click", (e) => {
     team.style.display = "none"
+    // widthTeam.style.width = ""
 
     const selectTeam = e.target.innerHTML
 

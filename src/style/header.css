@@ -2,8 +2,8 @@ header {
   z-index: 5;
   width: 100%;
   height: 10vh;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(0, 0, 0, 0.137);
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
   position: fixed;
   top: 0;
   display: flex;
@@ -25,13 +25,11 @@ header {
 .menu-box-1 {
   width: 7vw;
   height: 10vh;
-  border-right: 1px solid rgba(0, 0, 0, 0.137);
+  border-right: 1px solid var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.menu-box-1 button {
+  color: var(--color-text);
   font-family: arial, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
@@ -55,10 +53,6 @@ header {
   }
 }
 
-.menu-box-1 button:hover {
-  color: rgba(0, 0, 0, 0.774);
-}
-
 .choose-team {
   width: 11vw;
   height: 10vh;
@@ -69,8 +63,8 @@ header {
 .select-team {
   width: 35px;
   height: 35px;
-  border-right: 5px solid rgba(0, 0, 0, 0.137);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-right: 5px solid var(--border);
+  border-bottom: 1px solid var(--border);
   border-radius: 40px;
   position: relative;
   left: 10px;
@@ -89,7 +83,7 @@ header {
   width: 0;
   display: none;
   margin: 0px 5px;
-  color: black;
+  color: var(--color-text);
   text-align: center;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -108,8 +102,8 @@ header {
 .select-team-list {
   width: 13vw;
   height: auto;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(0, 0, 0, 0.137);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
   position: fixed;
   top: 7vh;
   margin-top: 3vh;
@@ -126,6 +120,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-text);
   font-family: "kionaI";
   font-size: 1.5rem;
   font-weight: bold;
@@ -174,8 +169,8 @@ header {
   z-index: 5;
   width: 35%;
   height: 90vh;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(0, 0, 0, 0.137);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
   position: fixed;
   top: 10vh;
   overflow-y: auto;
@@ -200,7 +195,7 @@ header {
 .top-navbar {
   width: 100%;
   height: 5vh;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-bottom: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -209,7 +204,6 @@ header {
 .container-language {
   width: 8vw;
   height: 4vh;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -217,8 +211,16 @@ header {
   transition: 0.5s;
 }
 
-.container-language:hover {
+/* .container-language:hover {
   border-bottom: 1px solid black;
+} */
+
+.container-language::after {
+  width: 1px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.205);
+  margin-left: 5px;
+  content: "";
 }
 
 .language {
@@ -239,7 +241,7 @@ header {
 .x-menu {
   width: 3vw;
   height: 5vh;
-  margin-right: 1vw;
+  padding: 0px 1vw;
   font-size: 16px;
   font-weight: bold;
 }
@@ -259,7 +261,7 @@ header {
 .nav-menu li {
   width: 100%;
   height: 20vh;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-bottom: 1px solid var(--border);
   position: relative;
   display: flex;
   align-items: center;
@@ -287,7 +289,8 @@ header {
 .nav-menu.active a,
 .nav-menu a {
   position: relative;
-  left: 30px;
+  left: 10px;
+  color: var(--color-text);
   font-family: arial, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
@@ -299,10 +302,15 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  color: var(--color-text);
   font-family: "kionaI", sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.box-2 h1 {
+  color: var(--color-text);
 }
 
 .box-3 {
@@ -335,8 +343,8 @@ header {
 .search-header {
   width: 35px;
   height: 35px;
-  border-left: 5px solid rgba(0, 0, 0, 0.137);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-left: 5px solid var(--border);
+  border-bottom: 1px solid var(--border);
   border-radius: 40px;
   position: relative;
   right: 10px;
@@ -354,7 +362,7 @@ header {
   width: 0;
   display: none;
   margin: 0px 5px;
-  color: black;
+  color: var(--color-text);
   text-align: center;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -373,9 +381,10 @@ header {
 .league {
   width: 7vw;
   height: 10vh;
-  border-left: 1px solid rgba(0, 0, 0, 0.137);
+  border-left: 1px solid var(--border);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1040px) {
@@ -407,16 +416,13 @@ header {
   }
 }
 
-.league button {
+.league span {
   position: relative;
+  color: var(--color-text);
   font-family: arial, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
-}
-
-.league button:hover {
-  color: rgba(0, 0, 0, 0.774);
 }
 
 .league:hover .championships {
@@ -427,8 +433,8 @@ header {
 .championships {
   z-index: 4;
   width: 250px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(0, 0, 0, 0.137);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
   position: fixed;
   top: 10vh;
   right: 0px;
@@ -448,7 +454,7 @@ header {
 .championships li {
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-bottom: 1px solid var(--border);
   position: relative;
   text-align: center;
 }
@@ -460,7 +466,7 @@ header {
 .championships a {
   position: relative;
   top: 44%;
-  color: black;
+  color: var(--color-text);
   font-family: arial, sans-serif;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -470,8 +476,7 @@ header {
 .color-system {
   width: 7vw;
   height: 10vh;
-  background-color: rgb(255, 255, 255);
-  border-left: 1px solid rgba(0, 0, 0, 0.137);
+  border-left: 1px solid var(--border);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -481,32 +486,20 @@ header {
   position: relative;
   display: flex;
   left: 15px;
+  color: var(--color-text);
   font-family: arial, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
 }
 
-.color-mode:hover {
-  color: rgba(0, 0, 0, 0.774);
-}
-
-.dark-mode {
+.color-mode-img {
   width: 20px;
   height: 20px;
   position: relative;
   left: 20px;
   margin-left: 2px;
   display: block;
-}
-
-.clear-mode {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  left: 20px;
-  margin-left: 2px;
-  display: none;
 }
 
 @media (max-width: 1040px) {
@@ -516,18 +509,12 @@ header {
   .color-mode {
     left: 10px;
   }
-  .dark-mode {
-    left: 15px;
-  }
-  .clear-mode {
+  .color-mode-img {
     left: 15px;
   }
 }
 @media (max-width: 700px) {
-  .dark-mode {
-    display: none;
-  }
-  .clear-mode {
+  .color-mode-img {
     display: none;
   }
 }
