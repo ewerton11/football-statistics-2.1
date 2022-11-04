@@ -238,10 +238,15 @@ header {
   font-weight: bold;
 }
 
+.language-rigth p {
+  color: var(--color-text);
+}
+
 .x-menu {
   width: 3vw;
   height: 5vh;
   padding: 0px 1vw;
+  color: var(--color-text);
   font-size: 16px;
   font-weight: bold;
 }
