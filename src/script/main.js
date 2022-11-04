@@ -35,7 +35,7 @@ const initialColors = {
 }
 
 const darkMode = {
-  bg: "#000000",
+  bg: "#1a1818",
   colorText: "#ffffff",
   border: "#ffffff23",
 }
@@ -50,20 +50,23 @@ const changeColors = (colors) => {
 
 var i = 0
 colorMode.addEventListener("click", function () {
-  let firstelement = document.querySelector(".color-mode")
+  const firstelement = document.querySelector(".color-mode")
+  const firstelementImg = document.querySelector(".color-system > img")
 
   if (i == 0) {
     i++
 
-    console.log(darkMode)
     changeColors(darkMode)
     firstelement.textContent = "Clear"
+    firstelementImg.src = "/public/imagens/claro.png"
+    firstelementImg.alt = "modo claro"
   } else {
     i = 0
 
-    console.log(initialColors)
     changeColors(initialColors)
     firstelement.textContent = "Dark"
+    firstelementImg.src = "/public/imagens/noturno.png"
+    firstelementImg.alt = "modo escuro"
   }
 })
 
