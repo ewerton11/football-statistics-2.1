@@ -1,3 +1,4 @@
+const html = document.querySelector("html")
 let menu = document.querySelector(".menu-box-1")
 let xnavbar = document.querySelector(".x-menu")
 let navmenu = document.querySelector("#nav-menu")
@@ -24,6 +25,29 @@ logo.addEventListener("click", () => {
   document.location.reload(true)
 })
 
+const getStyle = (element, style) =>
+  window.getComputedStyle(element).getPropertyValue(style)
+
+const initialColors = {
+  bg: getStyle(html, "--bg"),
+  colorText: getStyle(html, "--color-text"),
+  border: getStyle(html, "--border"),
+}
+
+const darkMode = {
+  bg: "#000000",
+  colorText: "#ffffff",
+  border: "#ffffff23",
+}
+
+const tranformKey = (key) => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
+
+const changeColors = (colors) => {
+  Object.keys(colors).map((key) =>
+    html.style.setProperty(tranformKey(key), colors[key])
+  )
+}
+
 var i = 0
 colorMode.addEventListener("click", function () {
   let firstelement = document.querySelector(".color-mode")
@@ -31,10 +55,14 @@ colorMode.addEventListener("click", function () {
   if (i == 0) {
     i++
 
+    console.log(darkMode)
+    changeColors(darkMode)
     firstelement.textContent = "Clear"
   } else {
     i = 0
 
+    console.log(initialColors)
+    changeColors(initialColors)
     firstelement.textContent = "Dark"
   }
 })
