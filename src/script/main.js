@@ -133,7 +133,7 @@ const Tables = new Next()
 const inputTeam = document.getElementById("input-select-team")
 
 inputTeam.addEventListener("input", () => {
-  const widthTeam = document.querySelector(".select-team")
+  // const widthTeam = document.querySelector(".select-team")
   const team = document.querySelector(".select-team-list")
 
   inputTeam.value.length === 0
@@ -196,9 +196,20 @@ function fetchData() {
 
       data.teams[0].items.forEach((item) => {
         listHtml(item.nameTeam)
+        teamsChat(item.nameTeam)
+
         teamSearch.push(item.nameTeam)
       })
     })
 }
 
 fetchData()
+
+const teamsChartUl = document.querySelector(".team-t1")
+
+function teamsChat(teamSearch) {
+  const li = document.createElement("li")
+
+  li.id = li.innerHTML = teamSearch
+  teamsChartUl.appendChild(li)
+}

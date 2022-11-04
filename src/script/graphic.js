@@ -31,6 +31,7 @@ const c1 = new Chart(document.getElementById("firstCircle"), {
     datasets: [
       {
         data: [],
+        // rgb(151, 151, 226) cor alternativa
         backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
       },
     ],

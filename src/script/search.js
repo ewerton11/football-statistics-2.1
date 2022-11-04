@@ -103,11 +103,12 @@ async function brazilCup() {
 
   await browser.close()
 }
+serieARound()
+liberatorsRound()
+brazilCup()
 
-const scheduling = nodeSchedule.scheduleJob({ hour: 20 }, () => {
-  serieARound()
-  liberatorsRound()
-  brazilCup()
-})
+// const scheduling = nodeSchedule.scheduleJob({ hour: 20 }, () => {
+
+// })
 
 // console.log(scheduling.nextInvocation())
