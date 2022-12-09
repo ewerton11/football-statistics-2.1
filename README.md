@@ -19,6 +19,10 @@ Puppeteer,
 
 ![alt text](https://github.com/ewerton11/assets/blob/main/football-statistics-1.2/football-statistics-menu.png)
 
+## Search
+
+![alt text](https://github.com/ewerton11/assets/blob/main/football-statistics-1.2/football-statistics-search.png)
+
 ## Statistics
 
 ![alt text](https://github.com/ewerton11/assets/blob/main/football-statistics-1.2/football-statistics-statistics.png)
