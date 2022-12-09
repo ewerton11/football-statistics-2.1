@@ -11,13 +11,17 @@ Chart.js,
 Puppeteer,
 </table>
 
-## Main layout
+## Layout
 
-![alt text](https://github.com/ewerton11/assets/blob/main/ewtbookmaker/bookmakerhome.png)
+![alt text](https://github.com/ewerton11/assets/blob/main/football-statistics-1.2/football-statistics-home.png)
 
-## Bets layout without being connected
+## Menu
 
-![alt text](https://github.com/ewerton11/assets/blob/main/ewtbookmaker/bookmakerbets.png)
+![alt text](https://github.com/ewerton11/assets/blob/main/football-statistics-1.2/football-statistics-menu.png)
+
+## Statistics
+
+![alt text](https://github.com/ewerton11/assets/blob/main/football-statistics-1.2/football-statistics-statistics.png)
 
 # How to run project
 
