@@ -6,9 +6,7 @@
 
 <table>
 Vite,
-Node.js,
 Chart.js,
-Puppeteer,
 </table>
 
 ## Layout
@@ -33,7 +31,7 @@ Puppeteer,
 
 # Clone repository
 
-git clone https://github.com/ewerton11/football-statistics-1.2.git
+git clone https://github.com/ewerton11/soccer-statistics.git
 
 # Run front end
 
