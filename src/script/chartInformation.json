@@ -4,88 +4,88 @@
       "items": [
         {
           "nameTeam": "america-mg",
-          "image": "/public/imagens/America-MG.png"
+          "image": "/src/assets/imagens/America-MG.png"
         },
         {
           "nameTeam": "athetico-pr",
-          "image": "/public/imagens/Athletico-PR.png"
+          "image": "/src/assets/imagens/Athletico-PR.png"
         },
         {
           "nameTeam": "atletico-go",
-          "image": "/public/imagens/Atletico-GO.png"
+          "image": "/src/assets/imagens/Atletico-GO.png"
         },
         {
           "nameTeam": "atletico-mg",
-          "image": "/public/imagens/Atletico-MG.png"
+          "image": "/src/assets/imagens/Atletico-MG.png"
         },
         {
           "nameTeam": "avai",
-          "image": "/public/imagens/Avai.png"
+          "image": "/src/assets/imagens/Avai.png"
         },
         {
           "nameTeam": "botafogo",
-          "image": "/public/imagens/Botafogo.png"
+          "image": "/src/assets/imagens/Botafogo.png"
         },
         {
           "nameTeam": "bragantino",
-          "image": "/public/imagens/Bragantino.png"
+          "image": "/src/assets/imagens/Bragantino.png"
         },
         {
           "nameTeam": "ceara",
-          "image": "/public/imagens/Ceara.png"
+          "image": "/src/assets/imagens/Ceara.png"
         },
         {
           "nameTeam": "corinthians",
-          "image": "/public/imagens/Corinthians.png"
+          "image": "/src/assets/imagens/Corinthians.png"
         },
         {
           "nameTeam": "coritiba",
-          "image": "/public/imagens/Coritiba.png"
+          "image": "/src/assets/imagens/Coritiba.png"
         },
         {
           "nameTeam": "cuiaba",
-          "image": "/public/imagens/Cuiaba.png"
+          "image": "/src/assets/imagens/Cuiaba.png"
         },
         {
           "nameTeam": "flamengo",
-          "image": "/public/imagens/Flamengo.png"
+          "image": "/src/assets/imagens/Flamengo.png"
         },
         {
           "nameTeam": "fluminense",
-          "image": "/public/imagens/Fluminense.png"
+          "image": "/src/assets/imagens/Fluminense.png"
         },
         {
           "nameTeam": "fortaleza",
-          "image": "/public/imagens/Fortaleza.png"
+          "image": "/src/assets/imagens/Fortaleza.png"
         },
         {
           "nameTeam": "goias",
-          "image": "/public/imagens/Goias.png"
+          "image": "/src/assets/imagens/Goias.png"
         },
         {
           "nameTeam": "internacional",
-          "image": "/public/imagens/Internacional.png"
+          "image": "/src/assets/imagens/Internacional.png"
         },
         {
           "nameTeam": "juventude",
-          "image": "/public/imagens/Juventude.png"
+          "image": "/src/assets/imagens/Juventude.png"
         },
         {
           "nameTeam": "palmeiras",
-          "image": "/public/imagens/Palmeiras.png"
+          "image": "/src/assets/imagens/Palmeiras.png"
         },
         {
           "nameTeam": "santos",
-          "image": "/public/imagens/Santos.png"
+          "image": "/src/assets/imagens/Santos.png"
         },
         {
           "nameTeam": "sao paulo",
-          "image": "/public/imagens/Sao Paulo.png"
+          "image": "/src/assets/imagens/Sao Paulo.png"
         }
       ]
     }
   ],
-  "brazilCup": [9, 1],
-  "phaseLib": [9, 1],
-  "roundBra": ["34", 4]
+  "brazilCup": [10, 0],
+  "phaseLib": [10, 0],
+  "roundBra": ["38", 0]
 }

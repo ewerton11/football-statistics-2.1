@@ -21,13 +21,13 @@
 }
 
 .last-update h2 {
-  font-family: "kionaI", arial, sans-serif;
+  font-family: 'kionaI', arial, sans-serif;
   font-size: 1rem;
 }
 
 #update-schedule {
   padding-left: 0.5rem;
-  font-family: "kionaI", arial, sans-serif;
+  font-family: 'kionaI', arial, sans-serif;
   font-size: 1rem;
 }
 
@@ -58,7 +58,7 @@
   position: relative;
   top: 2vh;
   color: var(--color-text);
-  font-family: "kionaI";
+  font-family: 'kionaI';
   font-size: 1.6rem;
 }
 
@@ -126,7 +126,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 1.6rem;
-  font-family: "kionaI", arial, sans-serif;
+  font-family: 'kionaI', arial, sans-serif;
 }
 
 #table-1 {
@@ -144,7 +144,7 @@
 
 #team-t1 {
   padding: 2.5vh 0px;
-  font-family: "kionaI", arial, sans-serif;
+  font-family: 'kionaI', arial, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
@@ -182,7 +182,7 @@
   align-items: center;
   justify-content: center;
   color: var(--color-text);
-  font-family: "kionaI", arial, sans-serif;
+  font-family: 'kionaI', arial, sans-serif;
   font-size: 1.4rem;
 }
 
@@ -197,7 +197,7 @@
 
 #types-t1 {
   padding: 2.5vh 0px;
-  font-family: "kionaI", arial, sans-serif;
+  font-family: 'kionaI', arial, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
@@ -236,7 +236,7 @@
   justify-content: center;
   align-items: center;
   color: var(--color-text);
-  font-family: "kionaI", arial, sans-serif;
+  font-family: 'kionaI', arial, sans-serif;
   font-size: 1.4rem;
 }
 

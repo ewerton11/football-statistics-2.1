@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "chart.js": "^3.9.1",
-    "node-schedule": "^2.1.0",
-    "puppeteer": "^19.1.0"
+    "node-schedule": "^2.1.0"
   }
 }

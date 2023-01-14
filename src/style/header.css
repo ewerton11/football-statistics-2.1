@@ -121,7 +121,7 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--color-text);
-  font-family: "kionaI";
+  font-family: 'kionaI';
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -220,7 +220,7 @@ header {
   height: 10px;
   background-color: rgba(0, 0, 0, 0.205);
   margin-left: 5px;
-  content: "";
+  content: '';
 }
 
 .language {
@@ -233,7 +233,7 @@ header {
 }
 
 .language-rigth {
-  font-family: "kionaI", sans-serif;
+  font-family: 'kionaI', sans-serif;
   font-size: 1em;
   font-weight: bold;
 }
@@ -303,7 +303,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   color: var(--color-text);
-  font-family: "kionaI", sans-serif;
+  font-family: 'kionaI', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;

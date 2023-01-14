@@ -1,8 +1,8 @@
-import Chart from "chart.js/auto"
+import Chart from 'chart.js/auto'
+import chartInformation from './chartInformation.json'
 
 async function fetchData() {
-  const response = await fetch("./src/script/chartInformation.json")
-  const data = await response.json()
+  const data = chartInformation
 
   return data
 }
@@ -24,14 +24,14 @@ fetchData().then((data) => {
   c3.update()
 })
 
-const c1 = new Chart(document.getElementById("firstCircle"), {
-  type: "doughnut",
+const c1 = new Chart(document.getElementById('firstCircle'), {
+  type: 'doughnut',
   data: {
-    labels: "",
+    labels: '',
     datasets: [
       {
         data: [],
-        backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
+        backgroundColor: ['rgb(8, 18, 58)', 'rgba(0, 0, 0, 0.035)'],
       },
     ],
   },
@@ -39,7 +39,7 @@ const c1 = new Chart(document.getElementById("firstCircle"), {
     responsive: true,
     hover: { mode: null },
     borderWidth: 0,
-    cutout: "90%",
+    cutout: '90%',
     animation: false,
     plugins: {
       tooltip: {
@@ -49,14 +49,14 @@ const c1 = new Chart(document.getElementById("firstCircle"), {
   },
 })
 
-const c2 = new Chart(document.getElementById("secondCircle"), {
-  type: "doughnut",
+const c2 = new Chart(document.getElementById('secondCircle'), {
+  type: 'doughnut',
   data: {
-    labels: "",
+    labels: '',
     datasets: [
       {
         data: [],
-        backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
+        backgroundColor: ['rgb(8, 18, 58)', 'rgba(0, 0, 0, 0.035)'],
       },
     ],
   },
@@ -64,7 +64,7 @@ const c2 = new Chart(document.getElementById("secondCircle"), {
     responsive: true,
     hover: { mode: null },
     borderWidth: 0,
-    cutout: "90%",
+    cutout: '90%',
     animation: false,
     plugins: {
       tooltip: {
@@ -74,14 +74,14 @@ const c2 = new Chart(document.getElementById("secondCircle"), {
   },
 })
 
-const c3 = new Chart(document.getElementById("thirdCircle"), {
-  type: "doughnut",
+const c3 = new Chart(document.getElementById('thirdCircle'), {
+  type: 'doughnut',
   data: {
-    labels: "",
+    labels: '',
     datasets: [
       {
         data: [],
-        backgroundColor: ["rgb(8, 18, 58)", "rgba(0, 0, 0, 0.035)"],
+        backgroundColor: ['rgb(8, 18, 58)', 'rgba(0, 0, 0, 0.035)'],
       },
     ],
   },
@@ -89,7 +89,7 @@ const c3 = new Chart(document.getElementById("thirdCircle"), {
     responsive: true,
     hover: { mode: null },
     borderWidth: 0,
-    cutout: "90%",
+    cutout: '90%',
     animation: false,
     plugins: {
       tooltip: {
@@ -99,26 +99,26 @@ const c3 = new Chart(document.getElementById("thirdCircle"), {
   },
 })
 
-const tableSlide = new Chart(document.getElementById("chart-t1"), {
-  type: "bar",
+const tableSlide = new Chart(document.getElementById('chart-t1'), {
+  type: 'bar',
   data: {
     labels: [
-      "1° rodada",
-      "2° rodada",
-      "3° rodada",
-      "4° rodada",
-      "5° rodada",
-      "6° rodada",
-      "7° rodada",
-      "8° rodada",
-      "9° rodada",
-      "10° rodada",
+      '1° rodada',
+      '2° rodada',
+      '3° rodada',
+      '4° rodada',
+      '5° rodada',
+      '6° rodada',
+      '7° rodada',
+      '8° rodada',
+      '9° rodada',
+      '10° rodada',
     ],
     datasets: [
       {
-        label: "",
-        backgroundColor: "rgb(8, 18, 58, .10)",
-        borderColor: "rgb(8, 18, 58)",
+        label: '',
+        backgroundColor: 'rgb(8, 18, 58, .10)',
+        borderColor: 'rgb(8, 18, 58)',
         borderWidth: 3,
         categoryPercentage: 0.3,
         data: [1, 1, 5, 2, 0, 3, 4, 0, 2, 5],
